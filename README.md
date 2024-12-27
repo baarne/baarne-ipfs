@@ -55,7 +55,7 @@ This project is a file uploading tool using IPFS (InterPlanetary File System) fo
     ```bash
     node index.js
 
-	•	The backend runs on http://localhost:5001.
+	•The backend runs on http://localhost:5001.
 
 ### Step 3: IPFS Daemon
 1.	Install and configure IPFS if not already installed:
@@ -64,7 +64,7 @@ This project is a file uploading tool using IPFS (InterPlanetary File System) fo
 
 ipfs daemon
 
-	•	Ensure the daemon is running before proceeding.
+	•Ensure the daemon is running before proceeding.
 
 ### Step 4: Frontend Setup
 1.	Navigate to the frontend folder:
@@ -81,7 +81,7 @@ npm install
 
 npm start
 
-	•	The frontend runs on http://localhost:3000.
+	•The frontend runs on http://localhost:3000.
 
 ## How to Use
 1.	Open the frontend in your browser:
@@ -105,13 +105,13 @@ To test the backend API directly:
 ## Packages Used
 
 ### Frontend:
-	•	react
-	•	axios
+	•react
+	•axios
 
 ### Backend:
-	•	express
-	•	ipfs-http-client
-	•	multer (for handling file uploads)
+	•express
+	•ipfs-http-client
+	•multer (for handling file uploads)
 
 ## Future Enhancements
 1.	Add CSS for a polished UI.
@@ -120,27 +120,27 @@ To test the backend API directly:
 4.	Support additional file management features like deletion and metadata.
 
 ## Troubleshooting
-	•	IPFS Daemon Not Running:
+	•IPFS Daemon Not Running:
 Make sure the IPFS daemon is started using ipfs daemon before running the backend.
-	•	API Error in Postman:
+	•API Error in Postman:
 Double-check the endpoint URL (http://localhost:5001/upload) and ensure the backend server is running.
-	•	Frontend Not Loading:
+	•Frontend Not Loading:
 Ensure dependencies are installed with npm install and the app is started using npm start.
 
 ## Detailed Explanation of the Project
 
 ### Backend Overview:
-	•	Built with Node.js and Express.js.
-	•	IPFS Connection:
+	•Built with Node.js and Express.js.
+	•IPFS Connection:
 The ipfs-http-client package is used to connect to the local IPFS daemon. This allows us to upload files to IPFS and retrieve their CID.
 	•	File Uploading:
 The multer middleware is used to handle file uploads from the frontend. Once a file is received, it is sent to the IPFS network.
 
 ### Frontend Overview:
-	•	Built with React.
-	•	File Selection and Upload:
+	•Built with React.
+	•File Selection and Upload:
 Users can select files using an HTML <input> element. The selected file is sent to the backend via an HTTP POST request using axios.
-	•	CID Display:
+	•CID Display:
 After the file is successfully uploaded to IPFS, the CID returned by the backend is displayed on the frontend.
 
 ## How the Project Works:
